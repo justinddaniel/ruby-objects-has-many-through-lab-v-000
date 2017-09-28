@@ -11,4 +11,10 @@ attr_accessor :name, :songs, :artist, :song
     self.songs << song
   end
 
+  def artists
+    self.songs.collect do |song|
+      song.artist
+    end
+  end
+
 end
