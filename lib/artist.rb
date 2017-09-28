@@ -12,5 +12,10 @@ attr_accessor :name, :songs, :song, :genre, :genres
     song.artist = self
   end
 
+  def genres
+    self.songs.collect do |s|
+      s.genre
+    end
+  end
 
 end
