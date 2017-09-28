@@ -10,11 +10,11 @@ class patient
     appointment.patient = self
   end
 
-  def doctors 
+  def doctors
     self.appointments.collect |a| do
-      a.doctor 
+      a.doctor
     end
   end
-  
+
 end
     
